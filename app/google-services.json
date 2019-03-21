@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "50288671198",
+    "firebase_url": "https://kosanqu-82e57.firebaseio.com",
+    "project_id": "kosanqu-82e57",
+    "storage_bucket": "kosanqu-82e57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50288671198:android:8695db53ff4db5f5",
+        "android_client_info": {
+          "package_name": "id.trydev.kosanqu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50288671198-bd7uds9t15n0fkaf7u6kojq4gfe9nbco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu5txKABDdHVTy1RcjbllTQhiDpZPhS4Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

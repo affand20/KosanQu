@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_kost"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/iv_preview_kost"
+            android:src="@drawable/ic_home_grey_24dp"
+            />
+        <RelativeLayout
+            android:background="@color/colorAccent"
+            android:layout_below="@id/iv_preview_kost"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_judul"
+                android:text="Kost murah dekat UNAIR (cuma 5 menit)"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_alamat_kos"
+                android:text="Jl. Mulyorejo Baru No.39A"
+                android:layout_below="@id/tv_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_harga_kos"
+                android:text="@string/harga_kos"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@id/tv_alamat_kos"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_jenis_penghuni_kos"
+                android:text="Kos Putra"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@id/tv_harga_kos"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/ll_fasilitas"
+                android:layout_below="@id/tv_jenis_penghuni_kos"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- list fasilitas -->
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

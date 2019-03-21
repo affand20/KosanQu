@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KosanQu</string>
+    <string name="harga_kos">%1s / bulan</string>
+</resources>
