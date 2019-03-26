@@ -1,4 +1,58 @@
 <resources>
     <string name="app_name">KosanQu</string>
     <string name="harga_kos">%1s / bulan</string>
+
+    <string name="jk1"> laki-laki </string>
+    <string name="jk2"> wanita </string>
+
+    <string-array name="pilihbayar">
+        <item >--Pilih--</item>
+        <item   > Per - hari </item>
+        <item   > Per - bulan </item>
+        <item   > Per - 8 bulan </item>
+        <item   > Per - tahun </item>
+    </string-array>
+
+    <string-array name="pilihukuran">
+        <item >--Pilih--</item>
+        <item   > 1x2 meter </item>
+        <item   > 2x3 meter </item>
+        <item   > 3x4 meter </item>
+    </string-array>
+
+    <string-array name="pilihharga">
+        <item >--pilih--</item>
+        <item > Rp. 300 - 500 ribu </item>
+        <item > Rp. 550 - 700 ribu </item>
+        <item > Rp.750 ribu - 1 juta </item>
+        <item > Diatas 1 juta </item>
+    </string-array>
+
+    <string-array name="pilihjarak">
+        <item >--pilih--</item>
+        <item > 100-300 meter dari kampus </item>
+        <item > 350-600 meter dari kampus </item>
+        <item > 650-1000 meter dari kampus </item>
+    </string-array>
+
+    <string name="fasilitas1"> AC </string>
+    <string name="fasilitas2"> Kulkas </string>
+    <string name="fasilitas3"> Dapur </string>
+    <string name="fasilitas4"> Wifi </string>
+    <string name="fasilitas5"> Tempat Parkir </string>
+    <string name="fasilitas6"> Memiliki tempat tidur </string>
+
+    <String name="rentang_harga1"> Rp. 300 - 500 ribu </String>
+    <string name="rentang_harga2"> Rp. 550 - 700 ribu </string>
+    <string name="rentang_harga3"> Rp.750 ribu - 1 juta</string>
+    <string name="rentang_harga4"> Diatas 1 juta </string>
+
+    <string name="jarak1"> 100-300 meter dari kampus </string>
+    <string name="jarak2"> 350-600 meter dari kampus </string>
+    <string name="jarak3"> 650-1000 meter dari kampus </string>
+
+
+    <string name="KM1"> Kamar mandi luar </string>
+    <string name="KM2"> Kamar mandi dalam </string>
+
 </resources>
