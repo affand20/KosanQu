@@ -7,6 +7,13 @@
     android:background="@color/colorPrimary"
     tools:context=".FilterActivity">
 
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="500dp"
@@ -43,15 +50,18 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:id="@+id/jk"
+                    android:orientation="horizontal"
                     android:layout_height="wrap_content">
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="@string/jk1" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="@string/jk2" />
                 </RadioGroup>
 
@@ -105,16 +115,138 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:id="@+id/Km"
+                    android:orientation="horizontal"
                     android:layout_height="wrap_content">
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="@string/KM1" />
-
                     <RadioButton
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="@string/KM2" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ber- AC ?? \t:" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/fasilitas1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YA"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TIDAK" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memiliki kulkas ?? \t:" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/fasilitas2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YA"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TIDAK" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memiliki dapur ?? \t:" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/fasilitas3"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YA"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TIDAK" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memiliki wifi ?? \t:" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/fasilitas4"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YA"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TIDAK" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memiliki tempat parkir mobil ?? \t:" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/fasilitas5"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YA"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TIDAK" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memiliki tempat tidur ?? \t:" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/fasilitas6"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YA"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TIDAK" />
                 </RadioGroup>
 
 

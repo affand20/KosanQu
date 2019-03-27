@@ -16,6 +16,9 @@
     <string-array name="pilihukuran">
         <item >--Pilih--</item>
         <item   > 1x2 meter </item>
+        <item   > 2x1 meter </item>
+        <item   > 3x2 meter </item>
+        <item   > 4x3 meter </item>
         <item   > 2x3 meter </item>
         <item   > 3x4 meter </item>
     </string-array>
@@ -39,7 +42,7 @@
     <string name="fasilitas2"> Kulkas </string>
     <string name="fasilitas3"> Dapur </string>
     <string name="fasilitas4"> Wifi </string>
-    <string name="fasilitas5"> Tempat Parkir </string>
+    <string name="fasilitas5"> Tempat Parkir mobil </string>
     <string name="fasilitas6"> Memiliki tempat tidur </string>
 
     <String name="rentang_harga1"> Rp. 300 - 500 ribu </String>
