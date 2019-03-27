@@ -32,7 +32,7 @@ public class splash extends AppCompatActivity {
                 } catch (Exception e){
                     System.out.println("EXc=" + e);
                 } finally {
-                    Intent intent = new Intent(splash.this, MainActivity.class);
+                    Intent intent = new Intent(splash.this, FilterActivity.class);
                     finish();
                     startActivity(intent);
 

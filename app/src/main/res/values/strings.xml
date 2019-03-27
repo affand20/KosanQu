@@ -45,15 +45,6 @@
     <string name="fasilitas5"> Tempat Parkir mobil </string>
     <string name="fasilitas6"> Memiliki tempat tidur </string>
 
-    <String name="rentang_harga1"> Rp. 300 - 500 ribu </String>
-    <string name="rentang_harga2"> Rp. 550 - 700 ribu </string>
-    <string name="rentang_harga3"> Rp.750 ribu - 1 juta</string>
-    <string name="rentang_harga4"> Diatas 1 juta </string>
-
-    <string name="jarak1"> 100-300 meter dari kampus </string>
-    <string name="jarak2"> 350-600 meter dari kampus </string>
-    <string name="jarak3"> 650-1000 meter dari kampus </string>
-
 
     <string name="KM1"> Kamar mandi luar </string>
     <string name="KM2"> Kamar mandi dalam </string>

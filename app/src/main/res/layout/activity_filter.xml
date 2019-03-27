@@ -72,7 +72,7 @@
 
                 <Spinner
                     android:id="@+id/pilihbayar"
-                    android:entries="@+array/pilihbayar"
+                    android:entries="@array/pilihbayar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
 
@@ -83,7 +83,7 @@
 
                 <Spinner
                     android:id="@+id/ukurankamar"
-                    android:entries="@+array/pilihukuran"
+                    android:entries="@array/pilihukuran"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
 
@@ -94,7 +94,7 @@
 
                 <Spinner
                     android:id="@+id/pilihharga"
-                    android:entries="@+array/pilihharga"
+                    android:entries="@array/pilihharga"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
 
@@ -105,7 +105,7 @@
 
                 <Spinner
                     android:id="@+id/pilihjarak"
-                    android:entries="@+array/pilihjarak"
+                    android:entries="@array/pilihjarak"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
                 <TextView
