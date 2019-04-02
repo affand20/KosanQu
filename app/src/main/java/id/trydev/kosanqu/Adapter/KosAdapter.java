@@ -9,12 +9,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.annotation.GlideModule;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import id.trydev.kosanqu.Model.Kos;
 import id.trydev.kosanqu.R;
-import id.trydev.kosanqu.Utils.GlideApp;
+import id.trydev.kosanqu.Utils.KosanquGlideModule;
 import id.trydev.kosanqu.Utils.ItemClickSupport;
 
 public class KosAdapter extends RecyclerView.Adapter<KosAdapter.ViewHolder> {
@@ -62,7 +65,7 @@ public class KosAdapter extends RecyclerView.Adapter<KosAdapter.ViewHolder> {
             harga.setText(item.getHarga());
             jenisKos.setText(item.getJenisPenghuni());
 
-            GlideApp.with(itemView)
+            Glide.with(itemView)
                     .asBitmap()
                     .centerCrop()
                     .load(item.getUrl())

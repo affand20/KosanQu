@@ -1,6 +1,14 @@
 package id.trydev.kosanqu.Model;
 
 import java.io.Serializable;
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+
+
 
 public class Kos implements Serializable {
 
@@ -10,6 +18,9 @@ public class Kos implements Serializable {
     private String jenisPenghuni;
     private String[] fasilitas;
     private String url;
+    public String jarak;
+    public String luas_kamar;
+    public String sistem_pembayaran;
 
     public String getUrl() {
         return url;
@@ -58,4 +69,24 @@ public class Kos implements Serializable {
     public void setFasilitas(String[] fasilitas) {
         this.fasilitas = fasilitas;
     }
+
+    public void setJarak(String jarak){
+        this.jarak=jarak;
+    }
+    public String getJarak(){
+        return jarak;
+    }
+    public void setLuasKamar(String luas_kamar){
+        this.luas_kamar=luas_kamar;
+    }
+    public String getLuasKamar() {
+        return luas_kamar;
+    }
+    public void setSisemPembayaran(String sistem_pembayaran){
+        this.sistem_pembayaran=sistem_pembayaran;
+    }
+    public String getSIstemPembayaran() {
+        return sistem_pembayaran;
+    }
+
 }
