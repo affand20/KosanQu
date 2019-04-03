@@ -1,762 +1,532 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colororange"
     tools:context=".FilterActivity">
 
-
-
     <ImageView
+        android:adjustViewBounds="true"
         android:layout_width="601dp"
         android:layout_height="200dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/logo" />
-    <LinearLayout
+        android:src="@drawable/logo"/>
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_marginTop="220dp"
-        android:background="@color/colorputih"
-        android:orientation="vertical">
-
-        <ScrollView
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="16dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:orientation="vertical">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nama\t\t:" />
-
-                <EditText
+                android:hint="Masukkan Nama"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
                     android:id="@+id/isinama"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Masukan Nama" />
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
 
-                <TextView
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/jk"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/jk_laki"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Jenis Kelamin\t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/jk"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/jk1" />
+                    android:layout_weight="1"
+                    android:text="@string/jk1" />
 
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/jk2" />
-                </RadioGroup>
-                <TextView
+                <RadioButton
+                    android:id="@+id/jk_perempuan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Kamar mandi dalam || Kamar mandi luar \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/Km1"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Harga Kos || Ukuran Kamar \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/HKUK"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Harga Kos || Ber AC \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/HKAC"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Harga Kos || Memiliki Dapur \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/HKD"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
+                    android:layout_weight="1"
+                    android:text="@string/jk2" />
+            </RadioGroup>
 
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wifi" />
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/hargavswifi"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/hargavswifihargaradio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ber AC || Harga Kos \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/ACHK"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="9" />
+                <RadioButton
+                    android:id="@+id/hargavswifihargaradio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ber AC || Ukuran kamar \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/ACD"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/hargavswifihargaradio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ber AC || Memiliki dapur \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/ACKM"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/hargavswifihargaradio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Kamar mandi dalam || Ukuran kamar \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/KMHK"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/hargavswifiradio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Kamar mandi dalam || Ber AC \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/KMAC"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="1" />
+                <RadioButton
+                    android:id="@+id/hargavswifiwifiadio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Kamar mandi dalam || Memiliki dapur \t:" />
-                <RadioGroup
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/hargavswifiwifiadio5"
                     android:layout_width="match_parent"
-                    android:id="@+id/KMD"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="5" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="7" />
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9" />
-                </RadioGroup>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/hargavswifiwifiadio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/hargavswifiwifiadio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+            </RadioGroup>
 
-
-
-
-
-
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ber- AC ?? \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/fasilitas1"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="YA"/>
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TIDAK" />
-                </RadioGroup>
+                    android:text="Harga" />
                 <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC" />
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/hargavsac"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/hargavsachargaradio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Memiliki kulkas ?? \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/fasilitas2"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="YA"/>
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TIDAK" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="9" />
+                <RadioButton
+                    android:id="@+id/hargavsachargaradio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Memiliki dapur ?? \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/fasilitas3"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="YA"/>
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TIDAK" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/hargavsachargaradio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Memiliki wifi ?? \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/fasilitas4"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="YA"/>
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TIDAK" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/hargavsachargaradio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Memiliki tempat parkir mobil ?? \t:" />
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:id="@+id/fasilitas5"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="YA"/>
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TIDAK" />
-                </RadioGroup>
-                <TextView
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/hargavsacradio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Memiliki tempat tidur ?? \t:" />
-                <RadioGroup
+                    android:layout_weight="1"
+                    android:text="1" />
+                <RadioButton
+                    android:id="@+id/hargavsacacradio3"
                     android:layout_width="match_parent"
-                    android:id="@+id/fasilitas6"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="YA"/>
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TIDAK" />
-                </RadioGroup>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/hargavsacacradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/hargavsacacradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/hargavsacacradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+            </RadioGroup>
 
-
-                <Button
-                    android:id="@+id/simpan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark"
-                    android:text="SIMPAN"
-                    android:textColor="@color/colorputih"/>
-
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <TextView
-                    android:id="@+id/hasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kamar Mandi" />
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/hargavskamarmandi"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/hargavskamarmandihargaradio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""/>
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
-</RelativeLayout>
+                    android:layout_weight="1"
+                    android:text="9" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandihargaradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandihargaradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandihargaradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandiradio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandikamarmandiradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandikamarmandiradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandikamarmandiradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/hargavskamarmandikamarmandiradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wifi" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC" />
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/wifivsac"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/wifivsacwifiradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+                <RadioButton
+                    android:id="@+id/wifivsacwifiradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/wifivsacwifiradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/wifivsacwifiradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/wifivsacradio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1" />
+                <RadioButton
+                    android:id="@+id/wifivsacacradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/wifivsacacradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/wifivsacacradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/wifivsacacradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wifi" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kamar Mandi" />
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/wifivskamarmandi"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/wifivskamarmandiwifiradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandiwifiradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandiwifiradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandiwifiradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandiradio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandikamarmandiradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandikamarmandiradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandikamarmandiradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/wifivskamarmandikamarmandiradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kamar Mandi" />
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:id="@+id/acvskamarmandi"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/acvskamarmandiacradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandiacradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandiacradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandiacradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandiradio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandikamarmandiradio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandikamarmandiradio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandikamarmandiradio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7" />
+                <RadioButton
+                    android:id="@+id/acvskamarmandikamarmandiradio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9" />
+            </RadioGroup>
+
+            <Button
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="SIMPAN"
+                android:textColor="@color/colorputih"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
