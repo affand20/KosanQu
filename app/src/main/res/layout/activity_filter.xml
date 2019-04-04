@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colororange"
+    android:background="@drawable/bgk"
     tools:context=".FilterActivity">
     <ScrollView
         android:layout_width="match_parent"
@@ -79,6 +79,7 @@
                 android:layout_width="match_parent"
                 android:id="@+id/hargavswifi"
                 android:orientation="horizontal"
+                android:outlineAmbientShadowColor="@color/colorPrimaryDark"
                 android:layout_height="wrap_content">
                 <RadioButton
                     android:id="@+id/hargavswifihargaradio9"
@@ -522,8 +523,9 @@
                 android:id="@+id/simpan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
+                android:background="@drawable/rounded"
                 android:text="SIMPAN"
+                android:textSize="20dp"
                 android:textColor="@color/colorputih"/>
 
         </LinearLayout>

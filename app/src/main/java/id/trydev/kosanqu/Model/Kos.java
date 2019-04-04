@@ -18,6 +18,8 @@ public class Kos implements Serializable {
     private String sistem_pembayaran;
     private String wifi;
     private double priority;
+    private String url;
+
 
     public double getPriority() {
         return priority;
@@ -102,5 +104,13 @@ public class Kos implements Serializable {
 
     public void setWifi(String wifi) {
         this.wifi = wifi;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

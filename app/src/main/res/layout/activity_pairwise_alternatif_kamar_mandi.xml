@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colororange"
+    android:background="@drawable/bgm"
     tools:context=".PairwiseAlternatifKamarMandiActivity">
 
     <!--<ImageView-->
@@ -65,6 +65,7 @@
                 android:text="Perbandingan Kamar Mandi"
                 android:textSize="22sp"
                 android:textStyle="bold"
+                android:textColor="@color/colorputih"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -543,8 +544,9 @@
                 android:id="@+id/simpan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
+                android:background="@drawable/rounded"
                 android:text="SIMPAN"
+                android:textSize="20dp"
                 android:textColor="@color/colorputih"/>
 
         </LinearLayout>

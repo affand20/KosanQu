@@ -70,12 +70,12 @@ public class KosAdapter extends RecyclerView.Adapter<KosAdapter.ViewHolder> {
             luasKamar.setText(item.getLuas_kamar());
             kamarMandi.setText(TextUtils.join(", ", item.getKamar_mandi()));
 
-//            Glide.with(itemView)
-//                    .asBitmap()
-//                    .centerCrop()
-//                    .load(item.getUrl())
-//                    .thumbnail(0.25f)
-//                    .into(ivKos);
+            Glide.with(itemView)
+                    .asBitmap()
+                    .centerCrop()
+                    .load(item.getUrl())
+                    .thumbnail(0.25f)
+                    .into(ivKos);
         }
     }
 }
