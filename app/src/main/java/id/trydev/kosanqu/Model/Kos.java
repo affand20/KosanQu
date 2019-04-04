@@ -9,30 +9,36 @@ import java.util.Map;
 
 public class Kos implements Serializable {
 
-    private String judul;
     private String alamat;
     private String harga;
-    private String jenisPenghuni;
-    private String url;
-    private String jarak;
+    private String jenis;
+    private List<String> kamar_mandi;
     private String luas_kamar;
+    private String nama;
     private String sistem_pembayaran;
+    private String wifi;
+    private double priority;
 
-    public String getUrl() {
-        return url;
+    public double getPriority() {
+        return priority;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setPriority(double priority) {
+        this.priority = priority;
     }
 
-    public String getJudul() {
-        return judul;
+    public Kos(String alamat, String harga, String jenis, List<String> kamar_mandi, String luas_kamar, String nama, String sistem_pembayaran, String wifi) {
+        this.alamat = alamat;
+        this.harga = harga;
+        this.jenis = jenis;
+        this.kamar_mandi = kamar_mandi;
+        this.luas_kamar = luas_kamar;
+        this.nama = nama;
+        this.sistem_pembayaran = sistem_pembayaran;
+        this.wifi = wifi;
     }
 
-    public void setJudul(String judul) {
-        this.judul = judul;
-    }
+    public Kos(){}
 
     public String getAlamat() {
         return alamat;
@@ -50,31 +56,51 @@ public class Kos implements Serializable {
         this.harga = harga;
     }
 
-    public String getJenisPenghuni() {
-        return jenisPenghuni;
+    public String getJenis() {
+        return jenis;
     }
 
-    public void setJenisPenghuni(String jenisPenghuni) {
-        this.jenisPenghuni = jenisPenghuni;
+    public void setJenis(String jenis) {
+        this.jenis = jenis;
     }
 
-    public void setJarak(String jarak){
-        this.jarak=jarak;
+    public List<String> getKamar_mandi() {
+        return kamar_mandi;
     }
-    public String getJarak(){
-        return jarak;
+
+    public void setKamar_mandi(List<String> kamar_mandi) {
+        this.kamar_mandi = kamar_mandi;
     }
-    public void setLuasKamar(String luas_kamar){
-        this.luas_kamar=luas_kamar;
-    }
-    public String getLuasKamar() {
+
+    public String getLuas_kamar() {
         return luas_kamar;
     }
-    public void setSisemPembayaran(String sistem_pembayaran){
-        this.sistem_pembayaran=sistem_pembayaran;
+
+    public void setLuas_kamar(String luas_kamar) {
+        this.luas_kamar = luas_kamar;
     }
-    public String getSIstemPembayaran() {
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getSistem_pembayaran() {
         return sistem_pembayaran;
     }
 
+    public void setSistem_pembayaran(String sistem_pembayaran) {
+        this.sistem_pembayaran = sistem_pembayaran;
+    }
+
+    public String getWifi() {
+        return wifi;
+    }
+
+    public void setWifi(String wifi) {
+        this.wifi = wifi;
+    }
 }

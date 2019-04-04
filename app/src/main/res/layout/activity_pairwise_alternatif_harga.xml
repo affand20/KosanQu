@@ -6,7 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colororange"
-    tools:context=".FilterActivity">
+    tools:context=".PairwiseAlternatifHargaActivity">
+
+    <!--<ImageView-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:layout_width="601dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:src="@drawable/logo"/>-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,13 +24,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:orientation="vertical">
-            <ImageView
-                android:layout_gravity="center_horizontal"
-                android:adjustViewBounds="true"
-                android:layout_width="601dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/logo"/>
+
             <!--<android.support.design.widget.TextInputLayout-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:hint="Masukkan Nama"-->
@@ -60,15 +61,25 @@
                     <!--android:text="@string/jk2" />-->
             <!--</RadioGroup>-->
 
+            <TextView
+                android:text="Perbandingan Harga"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
             <RelativeLayout
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/hargakos1vskos2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Harga" />
                 <TextView
+                    android:id="@+id/hargakos2vskos1"
                     android:layout_alignParentEnd="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -77,59 +88,59 @@
             <RadioGroup
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:id="@+id/hargavswifi"
+                android:id="@+id/kos1vskos2"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
                 <RadioButton
-                    android:id="@+id/hargavswifihargaradio9"
+                    android:id="@+id/kos1vskos2kos1radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="9" />
                 <RadioButton
-                    android:id="@+id/hargavswifihargaradio7"
+                    android:id="@+id/kos1vskos2kos1radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/hargavswifihargaradio5"
+                    android:id="@+id/kos1vskos2kos1radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/hargavswifihargaradio3"
+                    android:id="@+id/kos1vskos2kos1radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/hargavswifiradio1"
+                    android:id="@+id/kos1vskos2radio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="1" />
                 <RadioButton
-                    android:id="@+id/hargavswifiwifiadio3"
+                    android:id="@+id/kos1vskos2kos2radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/hargavswifiwifiadio5"
+                    android:id="@+id/kos1vskos2kos2radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/hargavswifiwifiadio7"
+                    android:id="@+id/kos1vskos2kos2radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/hargavswifiwifiadio9"
+                    android:id="@+id/kos1vskos2kos2radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -141,10 +152,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/hargakos1vskos3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Harga" />
                 <TextView
+                    android:id="@+id/hargakos3vskos1"
                     android:layout_alignParentEnd="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -153,59 +166,59 @@
             <RadioGroup
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:id="@+id/hargavsac"
+                android:id="@+id/kos1vskos3"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
                 <RadioButton
-                    android:id="@+id/hargavsachargaradio9"
+                    android:id="@+id/kos1vskos3kos1radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="9" />
                 <RadioButton
-                    android:id="@+id/hargavsachargaradio7"
+                    android:id="@+id/kos1vskos3kos1radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/hargavsachargaradio5"
+                    android:id="@+id/kos1vskos3kos1radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/hargavsachargaradio3"
+                    android:id="@+id/kos1vskos3kos1radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/hargavsacradio1"
+                    android:id="@+id/kos1vskos3radio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="1" />
                 <RadioButton
-                    android:id="@+id/hargavsacacradio3"
+                    android:id="@+id/kos3vskos1kos3radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/hargavsacacradio5"
+                    android:id="@+id/kos3vskos1kos3radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/hargavsacacradio7"
+                    android:id="@+id/kos3vskos1kos3radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/hargavsacacradio9"
+                    android:id="@+id/kos3vskos1kos3radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -217,10 +230,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/hargakos1vskos4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Harga" />
                 <TextView
+                    android:id="@+id/hargakos4vskos1"
                     android:layout_alignParentEnd="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -229,59 +244,59 @@
             <RadioGroup
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:id="@+id/hargavskamarmandi"
+                android:id="@+id/kos1vskos4"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
                 <RadioButton
-                    android:id="@+id/hargavskamarmandihargaradio9"
+                    android:id="@+id/kos1vskos4kos1radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="9" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandihargaradio7"
+                    android:id="@+id/kos1vskos4kos1radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandihargaradio5"
+                    android:id="@+id/kos1vskos4kos1radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandihargaradio3"
+                    android:id="@+id/kos1vskos4kos1radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandiradio1"
+                    android:id="@+id/kos1vskos4radio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="1" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandikamarmandiradio3"
+                    android:id="@+id/kos4vskos1kos4radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandikamarmandiradio5"
+                    android:id="@+id/kos4vskos1kos4radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandikamarmandiradio7"
+                    android:id="@+id/kos4vskos1kos4radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/hargavskamarmandikamarmandiradio9"
+                    android:id="@+id/kos4vskos1kos4radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -293,10 +308,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/hargakos2vskos3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Wifi" />
                 <TextView
+                    android:id="@+id/hargakos3vskos2"
                     android:layout_alignParentEnd="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -305,59 +322,59 @@
             <RadioGroup
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:id="@+id/wifivsac"
+                android:id="@+id/kos2vskos3"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
                 <RadioButton
-                    android:id="@+id/wifivsacwifiradio9"
+                    android:id="@+id/kos2vskos3kos2radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="9" />
                 <RadioButton
-                    android:id="@+id/wifivsacwifiradio7"
+                    android:id="@+id/kos2vskos3kos2radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/wifivsacwifiradio5"
+                    android:id="@+id/kos2vskos3kos2radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/wifivsacwifiradio3"
+                    android:id="@+id/kos2vskos3kos2radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/wifivsacradio1"
+                    android:id="@+id/kos2vskos3radio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="1" />
                 <RadioButton
-                    android:id="@+id/wifivsacacradio3"
+                    android:id="@+id/kos3vskos2kos3radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/wifivsacacradio5"
+                    android:id="@+id/kos3vskos2kos3radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/wifivsacacradio7"
+                    android:id="@+id/kos3vskos2kos3radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/wifivsacacradio9"
+                    android:id="@+id/kos3vskos2kos3radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -369,10 +386,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/hargakos2vskos4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Wifi" />
                 <TextView
+                    android:id="@+id/hargakos4vskos2"
                     android:layout_alignParentEnd="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -381,59 +400,59 @@
             <RadioGroup
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:id="@+id/wifivskamarmandi"
+                android:id="@+id/kos2vskos4"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
                 <RadioButton
-                    android:id="@+id/wifivskamarmandiwifiradio9"
+                    android:id="@+id/kos2vskos4kos2radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="9" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandiwifiradio7"
+                    android:id="@+id/kos2vskos4kos2radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandiwifiradio5"
+                    android:id="@+id/kos2vskos4kos2radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandiwifiradio3"
+                    android:id="@+id/kos2vskos4kos2radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandiradio1"
+                    android:id="@+id/kos2vskos4radio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="1" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandikamarmandiradio3"
+                    android:id="@+id/kos4vskos2kos4radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandikamarmandiradio5"
+                    android:id="@+id/kos4vskos2kos4radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandikamarmandiradio7"
+                    android:id="@+id/kos4vskos2kos4radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/wifivskamarmandikamarmandiradio9"
+                    android:id="@+id/kos4vskos2kos4radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -445,10 +464,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/hargakos3vskos4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="AC" />
                 <TextView
+                    android:id="@+id/hargakos4vskos3"
                     android:layout_alignParentEnd="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -457,59 +478,59 @@
             <RadioGroup
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:id="@+id/acvskamarmandi"
+                android:id="@+id/kos3vskos4"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
                 <RadioButton
-                    android:id="@+id/acvskamarmandiacradio9"
+                    android:id="@+id/kos3vskos4kos3radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="9" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandiacradio7"
+                    android:id="@+id/kos3vskos4kos3radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandiacradio5"
+                    android:id="@+id/kos3vskos4kos3radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandiacradio3"
+                    android:id="@+id/kos3vskos4kos3radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandiradio1"
+                    android:id="@+id/kos3vskos4radio1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="1" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandikamarmandiradio3"
+                    android:id="@+id/kos4vskos3kos4radio3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="3" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandikamarmandiradio5"
+                    android:id="@+id/kos4vskos3kos4radio5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandikamarmandiradio7"
+                    android:id="@+id/kos4vskos3kos4radio7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="7" />
                 <RadioButton
-                    android:id="@+id/acvskamarmandikamarmandiradio9"
+                    android:id="@+id/kos4vskos3kos4radio9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

@@ -1,41 +1,41 @@
 <resources>
     <string name="app_name">KosanQu</string>
-    <string name="harga_kos">%1s / bulan</string>
+    <string name="harga_kos">%1s / %2s</string>
 
     <string name="jk1"> laki-laki </string>
     <string name="jk2"> wanita </string>
 
     <string-array name="pilihbayar">
-        <item >--Pilih--</item>
-        <item   > Per - hari </item>
-        <item   > Per - bulan </item>
-        <item   > Per - 8 bulan </item>
-        <item   > Per - tahun </item>
+        <item>--Pilih--</item>
+        <item> Per - hari </item>
+        <item> Per - bulan </item>
+        <item> Per - 8 bulan </item>
+        <item> Per - tahun </item>
     </string-array>
 
     <string-array name="pilihukuran">
-        <item >--Pilih--</item>
-        <item   > 1x2 meter </item>
-        <item   > 2x1 meter </item>
-        <item   > 3x2 meter </item>
-        <item   > 4x3 meter </item>
-        <item   > 2x3 meter </item>
-        <item   > 3x4 meter </item>
+        <item>--Pilih--</item>
+        <item> 1x2 meter </item>
+        <item> 2x1 meter </item>
+        <item> 3x2 meter </item>
+        <item> 4x3 meter </item>
+        <item> 2x3 meter </item>
+        <item> 3x4 meter </item>
     </string-array>
 
     <string-array name="pilihharga">
-        <item >--pilih--</item>
-        <item > Rp. 300 - 500 ribu </item>
-        <item > Rp. 550 - 700 ribu </item>
-        <item > Rp.750 ribu - 1 juta </item>
-        <item > Diatas 1 juta </item>
+        <item>--pilih--</item>
+        <item> Rp. 300 - 500 ribu </item>
+        <item> Rp. 550 - 700 ribu </item>
+        <item> Rp.750 ribu - 1 juta </item>
+        <item> Diatas 1 juta </item>
     </string-array>
 
     <string-array name="pilihjarak">
-        <item >--pilih--</item>
-        <item > 100-300 meter dari kampus </item>
-        <item > 350-600 meter dari kampus </item>
-        <item > 650-1000 meter dari kampus </item>
+        <item>--pilih--</item>
+        <item> 100-300 meter dari kampus </item>
+        <item> 350-600 meter dari kampus </item>
+        <item> 650-1000 meter dari kampus </item>
     </string-array>
 
     <string name="fasilitas1"> AC </string>

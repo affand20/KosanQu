@@ -1,28 +1,43 @@
 package id.trydev.kosanqu;
 
+import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import id.trydev.kosanqu.Model.Priority;
 
 public class FilterActivity extends AppCompatActivity {
 
     private TextInputEditText nama;
     private RadioGroup jk, hargaVsWifi, hargaVsAc, hargaVsKamarMandi, wifiVsAc, wifiVsKamarMandi, acVsKamarMandi;
     private Button simpan;
+    public static List<Priority> listPriority = new ArrayList<>();
+    public static int lastIndex = 0;
+    public static double sumH, sumW, sumLK, sumKM;
 
     private double pairwiseArray[][] = new double[4][4];
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        lastIndex = 0;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filter);
 
-        nama = findViewById(R.id.isinama);
-        jk = findViewById(R.id.jk);
+//        nama = findViewById(R.id.isinama);
+//        jk = findViewById(R.id.jk);
         hargaVsWifi = findViewById(R.id.hargavswifi);
         hargaVsAc = findViewById(R.id.hargavsac);
         hargaVsKamarMandi = findViewById(R.id.hargavskamarmandi);
@@ -56,6 +71,26 @@ public class FilterActivity extends AppCompatActivity {
 
                 Ahp ahp = new Ahp(pairwiseArray);
                 ahp.operate();
+                if (ahp.checkConsistency(4)){
+                    listPriority = ahp.getSortedPriority();
+                    switch (listPriority.get(lastIndex++).getNama()){
+                        case "harga":
+                            startActivity(new Intent(FilterActivity.this, PairwiseAlternatifHargaActivity.class));
+                            break;
+                        case "wifi":
+                            startActivity(new Intent(FilterActivity.this, PairwiseAlternatifWifi.class));
+                            break;
+                        case "luas kamar":
+                            startActivity(new Intent(FilterActivity.this, PairwiseAlternatifLuasKamarActivity.class));
+                            break;
+                        case "kamar mandi":
+                            startActivity(new Intent(FilterActivity.this, PairwiseAlternatifKamarMandiActivity.class));
+                            break;
+                    }
+                } else{
+                    Toast.makeText(FilterActivity.this, "Jawaban tidak konsisten", Toast.LENGTH_LONG).show();
+                    finish();
+                }
             }
         });
 
@@ -199,7 +234,7 @@ public class FilterActivity extends AppCompatActivity {
                 break;
             case R.id.wifivsacwifiradio7:
                 pairwiseArray[1][2] = 7;
-                pairwiseArray[2][2] =  (double) 1/7;
+                pairwiseArray[2][1] =  (double) 1/7;
                 break;
             case R.id.wifivsacwifiradio5:
                 pairwiseArray[1][2] = 5;

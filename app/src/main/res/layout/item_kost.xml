@@ -43,7 +43,7 @@
                 android:textStyle="bold"
                 android:textColor="#000"
                 android:layout_below="@id/tv_alamat_kos"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
@@ -55,15 +55,36 @@
                 android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <LinearLayout
-                android:orientation="horizontal"
-                android:id="@+id/ll_fasilitas"
+            <TextView
+                android:text="Fasilitas Kamar Mandi"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:id="@+id/tv_fasilitas_kamar_mandi"
                 android:layout_below="@id/tv_jenis_penghuni_kos"
-                android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <!-- list fasilitas -->
-            </LinearLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_kamar_mandi"
+                android:layout_below="@id/tv_fasilitas_kamar_mandi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_wifi"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_alamat_kos"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_luas_kamar"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_wifi"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </RelativeLayout>
     </RelativeLayout>
 

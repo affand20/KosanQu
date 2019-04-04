@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.trydev.kosanqu.Adapter.KosAdapter;
+import id.trydev.kosanqu.Model.Alternatif;
 import id.trydev.kosanqu.Model.Kos;
 import id.trydev.kosanqu.Utils.ItemClickSupport;
 
@@ -36,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar progressBar;
 
     private KosAdapter adapter;
-    private List<Kos> listKos= new ArrayList();
-
+    public static List<Kos> listKos = new ArrayList();
 
     //private FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
 
@@ -77,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
         ItemClickSupport.addTo(rvListKos).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                intent.putExtra("kos_item", listKos.get(position));
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+//                intent.putExtra("kos_item", listKos.get(position));
+//                startActivity(intent);
             }
         });
 

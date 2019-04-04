@@ -2,6 +2,7 @@ package id.trydev.kosanqu.Adapter;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,7 @@ import id.trydev.kosanqu.Utils.ItemClickSupport;
 
 public class KosAdapter extends RecyclerView.Adapter<KosAdapter.ViewHolder> {
 
-    private List<Kos> listKos = new ArrayList<>();
+    private List<Kos> listKos;
     public KosAdapter(List<Kos> listKos){
         this.listKos = listKos;
     }
@@ -45,8 +46,7 @@ public class KosAdapter extends RecyclerView.Adapter<KosAdapter.ViewHolder> {
     class ViewHolder extends RecyclerView.ViewHolder {
         CardView cvKos;
         ImageView ivKos;
-        TextView judul, alamat, harga, jenisKos;
-        LinearLayout llFasilitas;
+        TextView judul, alamat, harga, jenisKos, kamarMandi, wifi, luasKamar;
         ViewHolder(View itemView) {
             super(itemView);
 
@@ -56,21 +56,26 @@ public class KosAdapter extends RecyclerView.Adapter<KosAdapter.ViewHolder> {
             alamat = itemView.findViewById(R.id.tv_alamat_kos);
             harga = itemView.findViewById(R.id.tv_harga_kos);
             jenisKos = itemView.findViewById(R.id.tv_jenis_penghuni_kos);
-            llFasilitas = itemView.findViewById(R.id.ll_fasilitas);
+            kamarMandi = itemView.findViewById(R.id.tv_kamar_mandi);
+            wifi = itemView.findViewById(R.id.tv_wifi);
+            luasKamar = itemView.findViewById(R.id.tv_luas_kamar);
         }
 
         void bindItem(Kos item){
-            judul.setText(item.getJudul());
+            judul.setText(item.getNama());
             alamat.setText(item.getAlamat());
-            harga.setText(item.getHarga());
-            jenisKos.setText(item.getJenisPenghuni());
+            harga.setText(String.format(itemView.getContext().getResources().getString(R.string.harga_kos), item.getHarga(), item.getSistem_pembayaran()));
+            jenisKos.setText(item.getJenis());
+            wifi.setText(item.getWifi());
+            luasKamar.setText(item.getLuas_kamar());
+            kamarMandi.setText(TextUtils.join(", ", item.getKamar_mandi()));
 
-            Glide.with(itemView)
-                    .asBitmap()
-                    .centerCrop()
-                    .load(item.getUrl())
-                    .thumbnail(0.25f)
-                    .into(ivKos);
+//            Glide.with(itemView)
+//                    .asBitmap()
+//                    .centerCrop()
+//                    .load(item.getUrl())
+//                    .thumbnail(0.25f)
+//                    .into(ivKos);
         }
     }
 }
